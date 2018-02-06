@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">MedCarer</string>
     <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="start">Welcome to MedCarer!</string>
+    <string name="message">
+        You are successfully registered with the above username. Please make sure to use that and password again when you
+        want to re-login after logout!
+        "\n\n"MedCarer will assist you to manage your all kind of medical activities easily.
+        "\n\n"Time to Start now!
+    </string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_logout">Log out</string>
+
 </resources>
