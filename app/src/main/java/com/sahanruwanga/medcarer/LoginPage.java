@@ -32,7 +32,6 @@ public class LoginPage extends AppCompatActivity {
     public void openRegisterPage(View view){
         Intent intent = new Intent(this,EmailRegister.class);
         startActivity(intent);
-        finish();
     }
 
 }

@@ -11,6 +11,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by Sahan Ruwanga on 2/2/2018.
@@ -22,22 +24,25 @@ public class User {
     private Activity activity;
     private FirebaseAuth firebaseAuth;
     private FirebaseUser currentUser;
+    private DatabaseReference databaseReference;
 
     public User(String email, String password, Activity activity){
         this.email = email;
         this.password = password;
         this.activity = activity;
-        setFirebaseAuth(FirebaseAuth.getInstance());
+        firebaseAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("users");
         register(email,password);
     }
 
     public User(Activity activity){
         this.activity = activity;
-        setFirebaseAuth(FirebaseAuth.getInstance());
+        firebaseAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
     public void login(String username,String password){
-        getFirebaseAuth().signInWithEmailAndPassword(username,password)
+        firebaseAuth.signInWithEmailAndPassword(username,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
                     @Override
@@ -55,7 +60,7 @@ public class User {
     }
 
     public void register(final String username, final String password){
-        getFirebaseAuth().createUserWithEmailAndPassword(username,password)
+        firebaseAuth.createUserWithEmailAndPassword(username,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -82,21 +87,18 @@ public class User {
     }
 
     public void logout(){
-        getFirebaseAuth().signOut();
+        firebaseAuth.signOut();
         Intent intent = new Intent(activity,LoginPage.class);
         activity.startActivity(intent);
         activity.finish();
     }
 
     public FirebaseUser checkCurrentUser(){
-        return getFirebaseAuth().getCurrentUser();
+        return firebaseAuth.getCurrentUser();
     }
 
-    public FirebaseAuth getFirebaseAuth() {
-        return firebaseAuth;
+    public void save(Medication obj){
+        databaseReference.child("users").child(checkCurrentUser().getUid()).child("medication_history").push().setValue(obj);
     }
 
-    public void setFirebaseAuth(FirebaseAuth firebaseAuth) {
-        this.firebaseAuth = firebaseAuth;
-    }
 }

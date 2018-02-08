@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sahanruwanga.medcarer.MedicationManager">
+    
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorBackground"/>
+
+    
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/nameTxt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Name of Medicine"
+                android:maxLines="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/diseaseTxt"
+                android:layout_below="@+id/nameTxt"
+                android:hint="Disease"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/doctorNameTxt"
+                android:layout_below="@+id/diseaseTxt"
+                android:hint="Doctor's Name"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/contactTxt"
+                android:layout_below="@+id/doctorNameTxt"
+                android:hint="Contact No"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/descriptionTxt"
+                android:layout_below="@+id/contactTxt"
+                android:hint="Description"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveBtn"
+                android:text="Save"
+                android:background="@drawable/rounded_button"
+                android:layout_below="@+id/descriptionTxt"
+                android:onClick="saveData"
+                android:layout_marginTop="15dp"
+                android:layout_alignRight="@id/nameTxt"
+                android:layout_marginBottom="15dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addNewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/saveBtn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:onClick="openAddForm"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
