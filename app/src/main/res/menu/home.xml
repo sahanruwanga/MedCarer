@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_logout"
+        android:id="@+id/savePDF"
         android:orderInCategory="100"
-        android:title="@string/action_logout"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:title="Save" />
+    <item
+        android:id="@+id/sharePDF"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Share"/>
 </menu>

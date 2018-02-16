@@ -20,7 +20,7 @@ public class WelcomePage extends AppCompatActivity {
                     Intent intent = new Intent(WelcomePage.this,Home.class);
                     startActivity(intent);
                 }else{
-                    Intent intent = new Intent(WelcomePage.this,LoginPage.class);
+                    Intent intent = new Intent(WelcomePage.this, LoginPage.class);
                     startActivity(intent);
                 }
                 finish();

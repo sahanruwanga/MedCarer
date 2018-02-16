@@ -88,7 +88,7 @@ public class User {
 
     public void logout(){
         firebaseAuth.signOut();
-        Intent intent = new Intent(activity,LoginPage.class);
+        Intent intent = new Intent(activity, LoginPage.class);
         activity.startActivity(intent);
         activity.finish();
     }
@@ -97,7 +97,7 @@ public class User {
         return firebaseAuth.getCurrentUser();
     }
 
-    public void save(Medication obj){
+    public void save(MedicalRecord obj){
         databaseReference.child("users").child(checkCurrentUser().getUid()).child("medication_history").push().setValue(obj);
     }
 

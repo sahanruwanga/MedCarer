@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#515153</color>
-    <color name="colorPrimaryDark">#5f5f61</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#f7f7f7</color>
+    <color name="colorPrimaryDark">#bababa</color>
+    <color name="colorAccent">#c41019</color>
     <color name="colorForButton">#5b98c1</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorBackground">#646464</color>
+    <color name="colorBackground">#f7f7f7</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBrown">#491919</color>
+    <color name="colorMedRecord">#ffdfdf</color>
+    <color name="colorLiteBlue">#6fcafa</color>
 </resources>

@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartPage" />
-        <activity android:name=".EmailRegister" />
-        <activity android:name=".PhoneRegister" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".WelcomePage">
+        <activity android:name="com.sahanruwanga.medcarer.StartPage" />
+        <activity android:name="com.sahanruwanga.medcarer.EmailRegister" />
+        <activity android:name="com.sahanruwanga.medcarer.PhoneRegister" />
+        <activity android:name="com.sahanruwanga.medcarer.LoginPage" />
+        <activity android:name="com.sahanruwanga.medcarer.WelcomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
+            android:name="com.sahanruwanga.medcarer.Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
-        <activity android:name=".MedicationManager"></activity>
+        <activity android:name="com.sahanruwanga.medcarer.MedicationManager" />
     </application>
 
 </manifest>

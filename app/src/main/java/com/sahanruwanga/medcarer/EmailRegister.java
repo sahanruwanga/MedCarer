@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.sahanruwanga.medcarer.R;
+import com.sahanruwanga.medcarer.User;
 
 public class EmailRegister extends AppCompatActivity {
     private AutoCompleteTextView username, password, conPassword;
