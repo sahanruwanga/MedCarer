@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138029180762",
+    "firebase_url": "https://medcarer.firebaseio.com",
+    "project_id": "medcarer",
+    "storage_bucket": "medcarer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138029180762:android:6e34a12933d894e7",
+        "android_client_info": {
+          "package_name": "com.sahanruwanga.medcarer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138029180762-d1fomph81umntiga4mvkaga819ivgq82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahanruwanga.medcarer",
+            "certificate_hash": "c99a69d1d20993476abdfa079e68001d600934af"
+          }
+        },
+        {
+          "client_id": "138029180762-8rhkes8un6j6kk2demfd2k9etecv5n37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcOxiBI3CVzL-E-_pzekygTTtDw9hubdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138029180762-8rhkes8un6j6kk2demfd2k9etecv5n37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

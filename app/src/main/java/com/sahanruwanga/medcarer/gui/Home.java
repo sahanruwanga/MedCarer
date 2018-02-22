@@ -1,4 +1,4 @@
-package com.sahanruwanga.medcarer;
+package com.sahanruwanga.medcarer.gui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,13 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.sahanruwanga.medcarer.R;
+import com.sahanruwanga.medcarer.controllers.User;
+import com.sahanruwanga.medcarer.model.Model;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -120,6 +122,10 @@ public class Home extends AppCompatActivity
     public void openMedication(View view){
         Intent intent = new Intent(this,MedicationManager.class);
         startActivity(intent);
+    }
+
+    public void openAllergicMedicine(View view){
+
     }
 
 }

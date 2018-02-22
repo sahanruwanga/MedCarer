@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sahanruwanga.medcarer.EmailRegister"
+    tools:context="com.sahanruwanga.medcarer.gui.EmailRegister"
     android:background="@color/colorBackground">
 
     <AutoCompleteTextView
@@ -45,11 +45,22 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:id="@+id/registerBtn"
         android:background="@drawable/rounded_button"
         android:layout_below="@+id/conPassTxt"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:text="@string/register"
-        android:onClick="createNewUser"/>
+        android:onClick="registerUser"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/registerBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:onClick="openLogin"
+        />
 
 </RelativeLayout>

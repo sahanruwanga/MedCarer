@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context="com.sahanruwanga.medcarer.WelcomePage">
+    tools:context="com.sahanruwanga.medcarer.gui.WelcomePage">
 
 </RelativeLayout>

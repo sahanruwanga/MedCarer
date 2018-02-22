@@ -1,22 +1,25 @@
-package com.sahanruwanga.medcarer;
+package com.sahanruwanga.medcarer.gui;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.sahanruwanga.medcarer.R;
+import com.sahanruwanga.medcarer.model.Model;
 
 public class WelcomePage extends AppCompatActivity {
-    private static int opening_delay = 2000;
-    public User user;
+    private static int opening_delay = 1500;
+    private Model model;
+
 
     @Override
     protected void onStart() {
         super.onStart();
-        user = new User(this);
+        setModel(new Model());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if(user.checkCurrentUser()!=null){
+                if(model.getCurrentUser()!=null){
                     Intent intent = new Intent(WelcomePage.this,Home.class);
                     startActivity(intent);
                 }else{
@@ -34,4 +37,14 @@ public class WelcomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_page);
     }
+
+    //region Getter and Setters
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
+    //endregion
 }

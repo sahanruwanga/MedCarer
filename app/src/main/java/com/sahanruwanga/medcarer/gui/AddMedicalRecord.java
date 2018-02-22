@@ -1,4 +1,4 @@
-package com.sahanruwanga.medcarer;
+package com.sahanruwanga.medcarer.gui;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.sahanruwanga.medcarer.controllers.MedicalRecord;
+import com.sahanruwanga.medcarer.R;
+import com.sahanruwanga.medcarer.controllers.User;
 
 public class AddMedicalRecord extends Fragment implements View.OnClickListener {
 
@@ -39,9 +43,9 @@ public class AddMedicalRecord extends Fragment implements View.OnClickListener {
 
 
     public void saveData(){
-//        new User(new MedicationManager()).save(new MedicalRecord(disease.getText().toString().trim(), medicine.getText().toString().trim(),
-//                allergic.getText().toString().trim(), date.getText().toString().trim(), doctorName.getText().toString().trim(),
-//                contact.getText().toString().trim(), description.getText().toString().trim()));
+        new User(new MedicationManager()).saveMedicalRecord(new MedicalRecord(disease.getText().toString().trim(), medicine.getText().toString().trim(),
+                allergic.getText().toString().trim(), date.getText().toString().trim(), doctorName.getText().toString().trim(),
+                contact.getText().toString().trim(), description.getText().toString().trim()));
 
     }
 

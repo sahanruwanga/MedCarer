@@ -1,4 +1,4 @@
-package com.sahanruwanga.medcarer;
+package com.sahanruwanga.medcarer.gui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

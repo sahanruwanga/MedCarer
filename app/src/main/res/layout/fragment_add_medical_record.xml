@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:tag="addRecord"
-    tools:context="com.sahanruwanga.medcarer.AddMedicalRecord">
+    tools:context="com.sahanruwanga.medcarer.gui.AddMedicalRecord">
 
     <ScrollView
         android:layout_width="match_parent"

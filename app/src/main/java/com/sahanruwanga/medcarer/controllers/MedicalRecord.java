@@ -1,4 +1,4 @@
-package com.sahanruwanga.medcarer;
+package com.sahanruwanga.medcarer.controllers;
 
 /**
  * Created by Sahan Ruwanga on 2/6/2018.
@@ -13,25 +13,21 @@ public class MedicalRecord {
     private String contact;
     private String description;
 
-//    public MedicalRecord(String disease, String medicine,String allergic, String date, String doctor, String contact, String description) {
-//        this.setMedicine(medicine);
-//        this.setDisease(disease);
-//        this.setDoctor(doctor);
-//        this.setContact(contact);
-//        this.setDate(date);
-//        this.setDescription(description);
-//        this.setAllergic(allergic);
-//    }
-    public MedicalRecord(String disease, String medicine, String allergic, String date){
-        this.disease=disease;
-        this.medicine=medicine;
-        this.allergic=allergic;
-        this.date=date;
+    public MedicalRecord(String disease, String medicine,String allergic, String date, String doctor, String contact, String description) {
+        this.setMedicine(medicine);
+        this.setDisease(disease);
+        this.setDoctor(doctor);
+        this.setContact(contact);
+        this.setDate(date);
+        this.setDescription(description);
+        this.setAllergic(allergic);
     }
+
 
     public MedicalRecord(){}
 
 
+    //region Getters and Setters
     public String getDisease() {
         return disease;
     }
@@ -87,5 +83,6 @@ public class MedicalRecord {
     public void setDescription(String description) {
         this.description = description;
     }
+    //endregion
 }
 

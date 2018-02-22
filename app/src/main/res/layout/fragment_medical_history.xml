@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
-    tools:context="com.sahanruwanga.medcarer.MedicalHistory">
+    tools:context="com.sahanruwanga.medcarer.gui.MedicalHistory">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -14,9 +15,11 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/ic_create"
+        app:rippleColor="@color/colorBlack"
         android:id="@+id/addBtn"
         android:layout_gravity="bottom|right"
         android:onClick="openAddForm"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp" />
 </FrameLayout>

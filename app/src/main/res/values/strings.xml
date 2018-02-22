@@ -3,7 +3,10 @@
     <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="start">Welcome to MedCarer!</string>
-    <string name="medical_history" formatted="true" >Medical History</string>
+    <string name="medical_history">Medical History</string>
+    <string name="new_record">New Medical Record</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
     <string name="message">
         You are successfully registered with the above username. Please make sure to use that and password again when you
         want to re-login after logout!
